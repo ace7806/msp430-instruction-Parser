@@ -23,7 +23,7 @@ load r0 3
 load r0 2
 load r0 1
 ```
-Run the Python script (msp430_parser.py) with the text file as input. The script reads the assembly instructions, generates the binary and hexadecimal representations, and saves them in a file named output.txt.
+Run the Python script (msp430_parser.py) with the text file in the same location. The script reads the assembly instructions, generates the binary and hexadecimal representations, and saves them in a file named output.txt.
 
 The generated output.txt file will contain the binary and hexadecimal representations of your assembly instructions:
 ```
