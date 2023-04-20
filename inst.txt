@@ -1,0 +1,16 @@
+load r1 15
+load r2 14
+load r3 13
+neg r1
+in r3
+jr30 2
+load r0 0
+load r0 0
+load r0 0
+load r0 0
+load r0 0
+load r0 0
+load r0 0
+load r0 3
+load r0 2
+load r0 1
