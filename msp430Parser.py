@@ -54,8 +54,7 @@ with open('inst.txt', 'r') as file:
     for line in file:
         binary_string = ''
         for x in line.lower().split():
-            if x in binary_map:
-                binary_string+=binary_map[x]
+            binary_string+=binary_map[x]
         if binary_string:
             if 'add' in line: binary_instructions.append(binary_string+'00')
             else: binary_instructions.append(binary_string)
@@ -63,8 +62,8 @@ with open('inst.txt', 'r') as file:
 
 hex_instructions = [hex_map[x[:4]] + hex_map[x[4:]] for x in binary_instructions]
 
-p1 = 'inst db ' + 'b, '.join(binary_instructions)+'b'
-p2 = 'inst db 0x' + ', 0x'.join(hex_instructions)
+p1 = 'RAM db ' + 'b, '.join(binary_instructions)+'b'
+p2 = 'RAM db 0x' + ', 0x'.join(hex_instructions)
 
 print(p1)
 print(p2)
