@@ -29,6 +29,7 @@ binary_map = {
     '15':'1111',
     'led':'01',
     'lcd':'10',
+    'hex':'00',
 }
 
 hex_map={
@@ -59,7 +60,7 @@ with open('inst.txt', 'r') as file:
             if 'add' in line: binary_instructions.append(binary_string+'00')
             else: binary_instructions.append(binary_string)
 
-
+print(binary_instructions)
 hex_instructions = [hex_map[x[:4]] + hex_map[x[4:]] for x in binary_instructions]
 
 p1 = 'RAM db ' + 'b, '.join(binary_instructions)+'b'

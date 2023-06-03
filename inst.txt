@@ -1,16 +1,16 @@
 load r1 15
-load r2 14
-load r3 13
+out r1 hex
+load r3 14
+out r3 hex
+add r1 r3
+out r1 hex
+shr r1
+out r1 hex
 neg r1
+out r1 hex
+out r3 lcd
 in r3
-jr30 2
-load r0 0
-load r0 0
-load r0 0
-load r0 0
-load r0 0
-load r0 0
-load r0 0
+jr30 10
+out r1 led
 load r0 3
-load r0 2
 load r0 1
